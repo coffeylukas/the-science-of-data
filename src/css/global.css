@@ -1,0 +1,38 @@
+body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
+    @apply font-body;
+}
+
+.h1 {
+    @apply text-3xl text-white font-body font-medium tracking-wide;
+}
+.h2 {
+    @apply text-2xl font-medium tracking-wide;
+}
+
+.button {
+    @apply inline-block bg-green rounded py-2 px-10 text-white font-medium text-sm uppercase;
+}
+@screen md {
+    .h1 {
+        @apply text-5xl;
+    }
+    .h2 {
+        @apply text-3xl;
+    }
+    .button {
+        @apply text-xl;
+    }
+}
+
+.has-curve {
+    @apply relative;
+}
+
+.curved-top {
+    @apply absolute w-full;
+    bottom: 99%; /* 99 instead of 100 to prevent thin line when resizing */
+}
+
+.flip-curve {
+    transform: rotate(180deg);
+}
