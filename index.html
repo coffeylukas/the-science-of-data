@@ -4,7 +4,7 @@ title: The Science of Data
 ---
 
 <section class="hero bg-darkBlue">
-    <div id="particle-js" class="fixed w-full h-full z-0"></div>
+    <div id="particle-js" class="hidden fixed w-full h-full z-0 md:block"></div>
     
     {% include header.html %}
 
@@ -13,7 +13,8 @@ title: The Science of Data
         <h1 class="h1">
             Data science and machine learning, explained.
         </h1>
-        <a href="/" class="button mt-10 lg:mt-20 relative z-10">Start Reading</a>
+        <a href="/" class="button mt-10 relative z-10">Start Reading</a>
+        <p class="hidden text-gray-500 text-sm mt-4 md:block">psst... click anywhere to add data points!</p>
     </div>
 </section>
 
@@ -21,7 +22,42 @@ title: The Science of Data
     <div class="curved-top flip-curve">
         <img src="/assets/images/curve.png" alt="Curve for aesthetics">
     </div>
-    <div class="container mx-auto py-20">
+    <div class="thin-container mx-auto py-20">
         <h2 class="h2 text-darkBlue">LATEST ARTICLES</h2>
+        <div class="separator mt-4"></div>
+        <div class="latest">
+            <div class="card horizontal">
+                <div class="text">
+                    <h2 class="h2">Gradient Boosting: The Definitive Guide</h2>
+                    <p>In this guide on gradient boosting, we’re going to dive deep into the ins and outs of boosting models: why they work, how they work, when you would use them, and how to use them.</p>
+                    <a href="/" class="link mt-2">Read It</a>
+                </div>
+                <div class="image">
+                    <img src="/assets/images/gradient-boosting.png" alt="Gradient Boosting">
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="text">
+                    <h2 class="h2">How to Prevent Overfitting in Decision Trees with R</h2>
+                    <p>In this guide on gradient boosting, we’re going to dive deep into the ins and outs of boosting models: why they work, how they work, when you would use them, and how to use them.</p>
+                    <a href="/" class="link mt-2">Read It</a>
+                </div>
+                <div class="image">
+                    <img src="/assets/images/gradient-boosting.png" alt="Gradient Boosting">
+                </div>
+            </div>
+            <div class="card">
+                <div class="text">
+                    <h2 class="h2">Random Forests: The Definitive Guide</h2>
+                    <p>In this guide on gradient boosting, we’re going to dive deep into the ins and outs of boosting models: why they work, how they work, when you would use them, and how to use them.</p>
+                    <a href="/" class="link mt-2">Read It</a>
+                </div>
+                <div class="image">
+                    <img src="/assets/images/gradient-boosting.png" alt="Gradient Boosting">
+                </div>
+            </div>
+        </div>
     </div>
 </section>

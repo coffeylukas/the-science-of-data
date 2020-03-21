@@ -1,0 +1,11 @@
+.hero {
+    background-image: url('/assets/images/data-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@screen md {
+    .hero {
+        background-image: none;
+    }
+}

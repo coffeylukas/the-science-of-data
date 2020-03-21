@@ -1,0 +1,33 @@
+.cards {
+    @apply flex flex-wrap;
+}
+
+.card {
+    @apply flex flex-col-reverse justify-end py-8;
+    @apply bg-white rounded-md;
+}
+
+.card .text .h2 {
+    @apply mt-4;
+}
+
+.card .text p {
+    @apply mt-2;
+}
+
+@screen sm {
+    .card {
+        @apply w-1/2 px-8;
+    }
+    .card.horizontal {
+        @apply flex flex-row w-full my-4;
+    }
+    
+    .card.horizontal .text, .card.horizontal .image {
+        @apply w-1/2;
+    }
+    
+    .card.horizontal .image {
+        @apply flex flex-col pl-8 justify-center;
+    }
+}

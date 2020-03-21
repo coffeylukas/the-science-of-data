@@ -1,0 +1,9 @@
+.button {
+    @apply inline-block bg-green rounded py-3 px-10 text-white font-medium text-base uppercase;
+}
+
+@screen md {
+    .button {
+        @apply text-lg;
+    }
+}

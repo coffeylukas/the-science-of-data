@@ -1,6 +1,33 @@
-body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
-    @apply font-body;
+/* ------------------------------------------------------- */
+/* Layout */
+.thin-container {
+    @apply mx-auto px-4;
+    width: 100%;
+    max-width: 960px;
 }
+
+/* ------------------------------------------------------- */
+/* Text */
+body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
+    @apply font-body text-darkBlue;
+}
+
+.link {
+    @apply text-green font-medium text-lg inline-block;
+}
+.link::after {
+    content: '';
+    background-image: url('/assets/images/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+}
+
+/* ------------------------------------------------------- */
+/*  Headings */
 
 .h1 {
     @apply text-3xl text-white font-body font-medium tracking-wide;
@@ -8,10 +35,10 @@ body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
 .h2 {
     @apply text-2xl font-medium tracking-wide;
 }
-
-.button {
-    @apply inline-block bg-green rounded py-2 px-10 text-white font-medium text-sm uppercase;
+.h3 {
+    @apply text-xl font-bold tracking-normal;
 }
+
 @screen md {
     .h1 {
         @apply text-5xl;
@@ -19,9 +46,14 @@ body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
     .h2 {
         @apply text-3xl;
     }
-    .button {
-        @apply text-xl;
-    }
+}
+
+/* ------------------------------------------------------- */
+/* Special Effects */
+
+.separator {
+    @apply bg-green w-20;
+    height: 5px;
 }
 
 .has-curve {

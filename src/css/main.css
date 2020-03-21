@@ -5,3 +5,6 @@
 @import "tailwindcss/utilities";
 
 @import "global";
+@import "button";
+@import "card";
+@import "hero";
