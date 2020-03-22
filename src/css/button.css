@@ -1,9 +1,13 @@
 .button {
-    @apply inline-block bg-green rounded py-3 px-10 text-white font-medium text-base uppercase;
+    @apply inline-block bg-green-normal rounded py-3 px-10 text-white font-medium text-base uppercase;
 }
 
 @screen md {
     .button {
-        @apply text-lg;
+        @apply text-lg cursor-pointer;
+        transition: 0.15s;
+    }
+    .button:hover {
+        @apply bg-green-shaded;
     }
 }

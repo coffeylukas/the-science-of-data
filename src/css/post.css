@@ -1,0 +1,93 @@
+.article h1 {
+    @apply text-5xl font-medium tracking-wide mt-2;
+}
+
+.article h2 {
+    @apply text-4xl font-medium tracking-wide mt-2;
+}
+
+.article h3 {
+    @apply text-3xl font-medium tracking-wide mt-2;
+}
+
+.article h4 {
+    @apply text-2xl font-medium tracking-wide mt-2;
+}
+
+.article h5 {
+    @apply text-xl font-medium tracking-wide mt-2 uppercase text-gray-500;
+}
+
+.article h6 {
+    @apply text-lg font-medium tracking-wide mt-2 uppercase;
+}
+
+.article p {
+    @apply tracking-normal leading-loose text-xl mt-2;
+}
+
+.article a {
+    @apply text-green-normal font-normal;
+}
+
+.article hr {
+    @apply my-4;
+}
+
+.article cite {
+    @apply text-gray-500 italic;
+}
+
+.article img {
+    @apply block mt-8 rounded;
+    width: 100%;
+}
+
+.article .curved-top img {
+    @apply mt-0;
+}
+
+.article ul {
+}
+
+.article li {
+    @apply tracking-normal leading-loose text-xl;
+}
+
+.article ul li::before {
+    list-style-type: none;
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    @apply text-gray-500 text-2xl w-5;
+}
+
+.article ol:not(.linenums) {
+    list-style: none;
+    counter-reset: li;
+    @apply pl-5 text-gray-500;
+}
+
+.article ol:not(.linenums) li {
+    counter-increment: li;
+}
+
+.article ol:not(.linenums) li::before {
+    content: counter(li);
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    @apply text-gray-500;
+}
+
+.article table {
+    @apply table-auto my-4 text-lg;
+}
+
+.article table th {
+    @apply px-4 py-2 font-medium;
+}
+
+.article table td {
+    @apply border px-4 py-2;
+}

@@ -16,6 +16,7 @@ mix
 
     // Javascript
     .js('src/js/app.js', 'js/main.js')
+    .js('src/js/prettify.js', 'js/prettify.js')
 
     // CSS
     .postCss('src/css/main.css', 'css', [

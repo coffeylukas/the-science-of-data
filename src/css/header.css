@@ -1,0 +1,52 @@
+.header {
+
+}
+
+.menu {
+    @apply flex-grow flex flex-row justify-end;
+}
+
+.menu ul {
+    @apply flex flex-col items-end;
+}
+
+.menu ul li {
+    @apply uppercase font-medium tracking-wider;
+}
+
+@screen md {
+    .menu ul {
+        @apply flex-row items-center;
+    }
+
+    .menu ul li {
+        @apply text-lg ml-20 relative z-10 p-2;
+    }
+
+    .menu ul a {
+        @apply z-10 cursor-pointer;
+    }
+
+    .menu ul li::after {
+        content: '';
+        width: 50px;
+        height: 50px;
+        display: block;
+        position: absolute;
+        transform: translateX(-25%) translateY(-80%) scale(0);
+        z-index: -10;
+        opacity: 0;
+        transition: 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+        @apply bg-green-normal rounded-full;
+    }
+
+    .menu ul li:hover::after {
+        transform: translateX(-25%) translateY(-80%) scale(1);
+        opacity: 1;
+    }
+
+    .menu ul li.active::after {
+        transform: translateX(-25%) translateY(-80%) scale(1);
+        opacity: 1;
+    }
+}

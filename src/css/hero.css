@@ -4,6 +4,13 @@
     background-repeat: no-repeat;
 }
 
+.post-hero {
+    background-image: url('/assets/images/data-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 @screen md {
     .hero {
         background-image: none;

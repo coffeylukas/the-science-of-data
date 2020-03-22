@@ -1,0 +1,33 @@
+---
+layout: default
+title: Articles | The Science of Data
+---
+
+<section class="pb-10">
+    {% include header.html style='dark' %}
+</section>
+
+<section class="bg-white has-curve">
+    <div class="thin-container mx-auto py-10">
+        <h2 class="h2 text-darkBlue sm:ml-8">ALL ARTICLES</h2>
+        <div class="separator mt-4 sm:ml-8"></div>
+        <div class="latest">
+            {% for post in site.posts %}
+                <div class="card horizontal">
+                    <div class="text">
+                        <a href="{{ post.url }}"><h2 class="h2">{{ post.title }}</h2></a>
+                        <a href="{{ post.url }}"><p>{{ post.excerpt }}</p></a>
+                        <a href="{{ post.url }}" class="link mt-2">Read It</a>
+                    </div>
+                    {% if post.image %}
+                        <div class="image">
+                            <a href="{{ post.url }}">
+                                <img src="/assets/images/uploads/{{ post.image }}" alt="Gradient Boosting">
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -13,7 +13,7 @@ body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
 }
 
 .link {
-    @apply text-green font-medium text-lg inline-block;
+    @apply text-green-normal font-medium text-lg inline-block;
 }
 .link::after {
     content: '';
@@ -24,6 +24,7 @@ body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
     height: 15px;
     width: 15px;
     margin-left: 10px;
+    transition: 0.15s;
 }
 
 /* ------------------------------------------------------- */
@@ -52,7 +53,7 @@ body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
 /* Special Effects */
 
 .separator {
-    @apply bg-green w-20;
+    @apply bg-green-normal w-20;
     height: 5px;
 }
 
@@ -62,7 +63,7 @@ body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
 
 .curved-top {
     @apply absolute w-full;
-    bottom: 99%; /* 99 instead of 100 to prevent thin line when resizing */
+    bottom: 99.9%; /* 99.5 instead of 100 to prevent thin line when resizing */
 }
 
 .flip-curve {

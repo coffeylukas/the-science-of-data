@@ -7,3 +7,5 @@ title: "The Science of Data" # the name of your site, e.g. ACME Corp.
 plugins:
   - jekyll-postcss
   - jekyll-purgecss
+
+permalink: /articles/:title/
