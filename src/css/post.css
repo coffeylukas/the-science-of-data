@@ -23,7 +23,7 @@
 }
 
 .article p {
-    @apply tracking-normal leading-loose text-xl mt-2;
+    @apply tracking-normal leading-loose text-base mt-2;
 }
 
 .article a {
@@ -51,7 +51,7 @@
 }
 
 .article li {
-    @apply tracking-normal leading-loose text-xl;
+    @apply tracking-normal leading-loose text-base;
 }
 
 .article ul li::before {
@@ -81,7 +81,7 @@
 }
 
 .article table {
-    @apply table-auto my-4 text-lg;
+    @apply table-auto my-4 text-base;
 }
 
 .article table th {
@@ -90,4 +90,19 @@
 
 .article table td {
     @apply border px-4 py-2;
+}
+
+
+/* Media Queries */
+
+@screen md {
+    .article p {
+        @apply tracking-normal leading-loose text-lg mt-2;
+    }
+    .article li {
+        @apply text-lg;
+    }
+    .article table {
+        @apply table-auto my-4 text-lg;
+    }
 }

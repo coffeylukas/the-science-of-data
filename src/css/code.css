@@ -21,12 +21,23 @@ samp {
 }
 
 code {
-    @apply px-2 py-1;
+    @apply px-2 py-1 overflow-x-scroll;
 }
 
 pre {
-    @apply p-4 my-4;
+    @apply p-4 my-4 overflow-x-scroll;
 }
+
+.article code li, .article pre li {
+    @apply text-base;
+}
+
+@screen md {
+    .article code li, .article pre li {
+        @apply text-lg;
+    }
+}
+
 /* --------------------------------- */
 
 
