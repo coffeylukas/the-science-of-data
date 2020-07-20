@@ -2,12 +2,15 @@
 layout: default
 ---
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <section class="post-hero bg-darkBlue">
     {% include header.html style='light' %}
 
     <div class="container pt-20 pb-40">
         <h1 class="h1 text-white">{{ page.title }}</h1>
         <div class="separator mt-4"></div>
+        <!-- <p class="inline-block mt-5 py-1 px-4 rounded-full text-white bg-green-normal">{{ page.category }}</p> -->
     </div>
 
 </section>
@@ -17,9 +20,23 @@ layout: default
         <img src="/assets/images/curve.png" alt="Curve for aesthetics">
     </div>
 
-    <div class="thin-container pt-20">
+    <div class="thin-container pt-20 pb-10 border-b border-gray-300">
         {{ content }}
     </div>
+</section>
+
+
+<section class="thin-container mt-10 mb-20">
+    {% if page.authorName %}
+    <div class="author mt-8 flex items-center">
+        <img src="/assets/images/{{ page.authorImageName }}" alt="Image of {{ page.authorName }}"
+            class="block w-24 mr-8 rounded-full">
+        <div>
+            <p class="font-semibold">by {{ page.authorName }}</p>
+            <p class="opacity-75">{{ page.authorTitle }}</p>
+        </div>
+    </div>
+    {% endif %}
 </section>
 
 <script src="/assets/js/prettify.js" type="text/javascript"></script>

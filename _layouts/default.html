@@ -8,12 +8,15 @@
     <!-- CSS and JS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    {% feed_meta %}
+    {% seo %}
   </head>
-  <body class="" id="body" onload="PR.prettyPrint()">
+  <body class="" id="body" {% if page.id.size > 0 %}onload="PR.prettyPrint()"{% endif %}>
+    
+    {{ content }}
 
-
-    {{ content}}
-
+    {% include footer.html style='dark' %}
 
     <script src="{{ "assets/js/main.js" | relative_url }}" type="text/javascript"></script>
   </body>

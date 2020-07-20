@@ -23,7 +23,7 @@
 }
 
 .article p {
-    @apply tracking-normal leading-loose text-base mt-2;
+    @apply tracking-normal leading-loose text-lg mt-2;
 }
 
 .article a {
@@ -51,7 +51,7 @@
 }
 
 .article li {
-    @apply tracking-normal leading-loose text-base;
+    @apply tracking-normal leading-loose text-lg;
 }
 
 .article ul li::before {
@@ -96,13 +96,16 @@
 /* Media Queries */
 
 @screen md {
+    .article h2, h3, h4, h5, h6 {
+        @apply mt-8 font-bold;
+    }
     .article p {
-        @apply tracking-normal leading-loose text-lg mt-2;
+        @apply tracking-normal leading-loose text-xl mt-5;
     }
     .article li {
-        @apply text-lg;
+        @apply text-xl;
     }
     .article table {
-        @apply table-auto my-4 text-lg;
+        @apply table-auto my-4 text-xl;
     }
 }
