@@ -13,6 +13,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-postcss
-  - jekyll-purgecss
 
 permalink: /articles/:title/
