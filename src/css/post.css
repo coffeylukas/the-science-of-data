@@ -30,6 +30,10 @@
     @apply text-green-normal font-normal;
 }
 
+.article strong {
+    @apply font-semibold;
+}
+
 .article hr {
     @apply my-4;
 }
