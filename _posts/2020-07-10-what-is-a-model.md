@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'What Is A Model And Why Does It Matter?'
-image: 'what-is-a-model.jpg'
+image: '/assets/images/uploads/what-is-a-model.jpg'
 authorName: 'Lukas Coffey'
 authorImageName: 'lukas.jpg'
 authorTitle: 'Data Engineering Intern at Capital One'
