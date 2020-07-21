@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-W3BH95P');</script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
@@ -8,12 +21,19 @@
     <!-- CSS and JS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    {% feed_meta %}
+    {% seo %}
   </head>
-  <body class="" id="body" onload="PR.prettyPrint()">
+  <body class="" id="body" {% if page.id.size > 0 %}onload="PR.prettyPrint()"{% endif %}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3BH95P"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    {{ content }}
 
-
-    {{ content}}
-
+    {% include footer.html style='dark' %}
 
     <script src="{{ "assets/js/main.js" | relative_url }}" type="text/javascript"></script>
   </body>

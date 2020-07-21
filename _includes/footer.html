@@ -1,0 +1,28 @@
+{% if include.style == 'dark' %}
+    {% assign logo = 'logo-dark.svg' %}
+    {% assign textColor = 'text-darkBlue' %}
+{% else %}
+    {% assign logo = 'logo-light.svg' %}
+    {% assign textColor = 'text-white' %}
+{% endif %}
+
+<footer class="bg-transparent py-20 flex relative z-50">
+    <div class="container mx-auto flex flex-row px-4">
+        <div class="flex-none">
+            <a href="/">
+                <img class="w-32 md:w-40" 
+                    src="/assets/images/{{ logo }}" alt="">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="/articles">
+                    <li class="{{ textColor }} {% if page.url == '/articles/' %}active{% endif %}">Articles</li>
+                </a>
+                {% comment %} <a href="/about">
+                    <li class="{{ textColor }} mt-1 md:mt-0 {% if page.url == '/about/' %}active{% endif %}">About</li>
+                </a> {% endcomment %}
+            </ul>
+        </div>
+    </div>
+</footer>

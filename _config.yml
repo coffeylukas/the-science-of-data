@@ -1,11 +1,17 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://thescienceofdata.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "The Science of Data" # the name of your site, e.g. ACME Corp.
+description: "The world of data, explained."
+image: "/assets/images/seo-preview.jpg"
+author: "Lukas Coffey"
+logo: "/assets/images/logo-main.png"
 
 
 # Plugins
 plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-postcss
-  - jekyll-purgecss
 
 permalink: /articles/:title/

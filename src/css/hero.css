@@ -1,14 +1,13 @@
 .hero {
-    background-image: url('/assets/images/data-bg.png');
+    background-image: url('/assets/images/article-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .post-hero {
-    background-image: url('/assets/images/data-bg.png');
+    background-image: url('/assets/images/article-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 @screen md {
