@@ -37,7 +37,7 @@ body, p, li, span, a, h1, h2, h3, h4, h5, h6 {
     @apply text-2xl font-medium tracking-wide;
 }
 .h3 {
-    @apply text-xl font-bold tracking-normal;
+    @apply text-xl font-medium tracking-normal;
 }
 
 @screen md {
