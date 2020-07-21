@@ -1,0 +1,19 @@
+{
+    "name": "The Science of Data",
+    "short_name": "The Science of Data",
+    "icons": [
+        {
+            "src": "/assets/images/favicon/android-chrome-192x192.png?v=wAd5LROWNY",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/android-chrome-512x512.png?v=wAd5LROWNY",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1b2839",
+    "background_color": "#1b2839",
+    "display": "standalone"
+}
